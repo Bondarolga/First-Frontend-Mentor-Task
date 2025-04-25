@@ -1,0 +1,706 @@
+:root {
+  font-size: 16px;
+}
+
+body {
+  font-family: "Bai Jamjuree", sans-serif;
+  font-size: 1em;
+  margin: 0px;
+  padding: 0px;}
+
+p {
+  color: hsl(201, 11%, 66%);
+  font-size: 0.8em;
+  line-height: 20px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: hsl(210, 10%, 33%);
+  margin: 0;
+  padding: 0;
+  font-weight: 600;
+}
+
+h1 {
+  font-size: 2em;
+}
+
+.ios-btn {
+  font-size: 12px;
+  font-weight: 600;
+  color: white;
+  padding-left: 22px;
+  padding-right: 22px;
+  padding-top: 9px;
+  padding-bottom: 9px;
+  background-color: #26baa4;
+  border-radius: 30px;
+  border: solid;
+  border-width: 1.5px;
+  border-color: #22a08d;
+  box-shadow: 0 8px 15px #49b3a367;
+  margin-right: 5px;
+  text-decoration: none;
+}
+
+.ios-btn:hover {
+  background-color: #51c8b6;
+}
+
+.mac-btn {
+  font-size: 12px;
+  font-weight: 600;
+  color: white;
+  padding-left: 22px;
+  padding-right: 22px;
+  padding-top: 9px;
+  padding-bottom: 9px;
+  background-color: #6173ff;
+  border-radius: 30px;
+  border: solid;
+  border-width: 1.5px;
+  border-color: #4559ed;
+  box-shadow: 0 8px 15px #6576ff66;
+  margin-left: 5px;
+  text-decoration: none;
+}
+
+.mac-btn:hover {
+  background-color: #818fff;
+}
+
+header {
+  padding-top: 100px;
+  padding-bottom: 70px;
+
+  background-image: linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0) 75%,
+      /* прозрачность до 75% */ white 100% /* потом плавно до белого */
+    ),
+    url("../images/bg-header-desktop.png");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+header img {
+  width: 100px;
+  /* или сколько нужно */
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.hero {
+  padding-bottom: 120px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  max-width: 500px;
+  /* ограничиваем ширину */
+  margin: 0 auto;
+  /* центрируем по горизонтали */
+}
+
+.buttons {
+  margin-top: 20px;
+}
+
+.hero p {
+  font-size: 0.9em;
+}
+
+.snippets {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  max-width: 500px;
+  /* ограничиваем ширину */
+  margin: 0 auto;
+  /* центрируем по горизонтали */
+  margin-bottom: 50px;
+}
+
+.snippets-block {
+  display: flex;
+  gap: 100px;
+  /* расстояние между колонками */
+  padding-bottom: 120px;
+}
+
+.snippets-block > img {
+  max-width: none;
+  /* Убираем ограничение ширины */
+  width: auto;
+  height: auto;
+  object-fit: cover;
+  margin-left: -50px;
+  /* Сделать так, чтобы изображение вылазило слева */
+}
+
+.snippets-list {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  padding-top: 90px;
+  padding-right: 350px;
+}
+
+.clipboard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  max-width: 600px;
+  /* ограничиваем ширину */
+  margin: 0 auto;
+  /* центрируем по горизонтали */
+  padding-bottom: 120px;
+}
+
+.clipboard p {
+  max-width: 500px;
+  /* ограничиваем ширину */
+  margin-bottom: 80px;
+}
+
+.workflow {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  max-width: 1000px;
+  /* ограничиваем ширину */
+  margin: 0 auto;
+  /* центрируем по горизонтали */
+  padding-bottom: 120px;
+}
+
+.workflow-tools {
+  display: flex;
+  gap: 30px;
+  /* расстояние между колонками */
+  justify-content: center;
+  /* центрируем весь блок */
+  margin-top: 50px;
+  margin-bottom: 100px;
+}
+
+.workflow-tools > div {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.workflow-tools svg {
+  height: 50px;
+  /* задаём высоту */
+  width: auto;
+  /* сохраняем пропорции */
+  display: block;
+
+  margin-bottom: 30px;
+  /* иконка -> заголовок */
+}
+
+.workflow-partner {
+  display: flex;
+  gap: 100px;
+  margin-bottom: 12px;
+}
+
+.workflow-partner img {
+  height: 35px;
+  /* или 50px, как тебе нужно */
+  width: auto;
+  /* подстроится автоматически */
+}
+
+.workflow-clipboard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  max-width: 500px;
+  /* ограничиваем ширину */
+  margin: 0 auto;
+  /* центрируем по горизонтали */
+  padding-top: 100px;
+}
+
+footer {
+  background-color: #f1f1f1;
+  padding-left: 220px;
+  padding-right: 220px;
+  padding-top: 40px;
+}
+
+.footer-items {
+  display: flex;
+  gap: 100px;
+  align-items: center;
+}
+
+.footer-items img {
+  height: 40px;
+  /* или 50px, как тебе нужно */
+  width: auto;
+  /* подстроится автоматически */
+}
+
+.footer-menu {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  /* 3 колонки */
+  grid-template-rows: repeat(2, auto);
+  /* 2 строки */
+  column-gap: 40px;
+  /* расстояние между колонками */
+  row-gap: 10px;
+  /* расстояние между строками */
+  justify-content: center;
+  /* центрируем по горизонтали */
+  text-align: left;
+}
+
+.footer-menu a {
+  margin: 0px;
+  color: hsl(210, 10%, 33%);
+  text-decoration: none;
+  font-size: 12px;
+}
+
+.footer-menu a:hover {
+  color: #26baa4;
+}
+
+.footer-social {
+  display: flex;
+  gap: 30px;
+  /* здесь регулируешь расстояние между иконками */
+  margin-left: auto;
+}
+
+.attribution {
+  margin-top: 30px;
+  font-size: 12px;
+  text-align: center;
+  margin-bottom: 0px;
+  padding-bottom: 10px;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media (min-width: 1441px) {
+  .snippets-block {
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+    justify-content: center;
+
+    padding-bottom: 120px;
+  }
+
+  .snippets-block > img {
+    max-width: none;
+    /* Убираем ограничение ширины */
+    width: auto;
+    height: auto;
+    object-fit: cover;
+    margin-left: 20px;
+    /* Сделать так, чтобы изображение вылазило слева */
+  }
+
+  .snippets-list {
+    padding-right: 0px;
+  }
+}
+
+/* Под мобильные устройства до 425px */
+@media (max-width: 425px) {
+  p {
+    font-size: 1.2em;
+    line-height: 30px;
+  }
+
+  .hero p {
+    font-size: 1.2em;
+    line-height: 30px;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-size: 2em;
+  }
+
+  h1 {
+    font-size: 2.3em;
+  }
+
+  header img {
+    width: 150px;
+    /* или сколько нужно */
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .hero,
+  .snippets,
+  .snippets-block,
+  .snippets-list,
+  .clipboard,
+  .workflow,
+  .workflow-clipboard {
+    max-width: 100%;
+    padding: 0 26px;
+  }
+
+  .buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    /* отступ между кнопками */
+    align-items: center;
+    /* центрируем */
+    margin-bottom: 140px;
+  }
+
+  .ios-btn,
+  .mac-btn {
+    margin: 0;
+    /* убираем margin-left/right, чтобы не мешали */
+    width: 100%;
+    text-align: center;
+
+    font-size: 1.2em;
+
+    padding-left: 38px;
+    padding-right: 38px;
+    padding-top: 18px;
+    padding-bottom: 18px;
+   
+
+  }
+
+  .snippets-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* <-- центрирует контент по горизонтали */
+    text-align: center; /* <-- выравнивание текста */
+    gap: 50px;
+    /* расстояние между колонками */
+    padding-bottom: 180px;
+  }
+  .snippets-block > img {
+    max-width: 350px;
+    /* Убираем ограничение ширины */
+    width: auto;
+    height: auto;
+    object-fit: cover;
+    margin-left: 0px;
+  }
+
+  .snippets-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* <-- центрирует контент по горизонтали */
+    text-align: center; /* <-- выравнивание текста */
+    gap: 40px;
+  }
+
+  .clipboard > img {
+    max-width: 350px;
+    /* Убираем ограничение ширины */
+    width: auto;
+    height: auto;
+    object-fit: cover;
+    margin-bottom: 120px;
+  }
+
+  .workflow-tools {
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+  }
+
+  .workflow-partner {
+    flex-direction: column;
+    align-items: center;
+    gap: 60px;
+    margin-bottom: 120px;
+  }
+
+  footer {
+    padding: 80px 0px 20px 0px;
+  }
+
+  .footer-items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+  }
+
+  .footer-items img {
+    height: 80px;
+    /* или 50px, как тебе нужно */
+    width: auto;
+    /* подстроится автоматически */
+  }
+
+  .footer-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 20px;
+    text-align: left;
+  }
+
+  .footer-menu a {
+    font-size: 1.3em;
+    padding-bottom: 30px;
+  }
+
+  .footer-social {
+    justify-content: center; /* Центрируем иконки по горизонтали */
+    margin-left: 0; /* убираем маргин слева */
+    margin-right: 0; /* убираем маргин справа */
+    gap: 50px;
+    margin-bottom: 20px;
+  }
+}
+
+
+
+@media (min-width: 426px) and (max-width: 768px) {
+  p {
+    font-size: 1.2em;
+    line-height: 30px;
+  }
+
+  .hero p {
+    font-size: 1.2em;
+    line-height: 30px;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-size: 2em;
+  }
+
+  h1 {
+    font-size: 2.3em;
+  }
+
+  header img {
+    width: 150px;
+    /* или сколько нужно */
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .hero,
+  .snippets,
+  .snippets-block,
+  .snippets-list,
+  .clipboard,
+  .workflow,
+  .workflow-clipboard {
+    max-width: 100%;
+    padding: 0 26px;
+  }
+
+  .buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    /* отступ между кнопками */
+    align-items: center;
+    /* центрируем */
+    margin-bottom: 140px;
+  }
+
+  .ios-btn,
+  .mac-btn {
+    margin: 0;
+    /* убираем margin-left/right, чтобы не мешали */
+    width: 100%;
+    text-align: center;
+
+    font-size: 1.2em;
+
+    padding-left: 48px;
+    padding-right: 48px;
+    padding-top: 18px;
+    padding-bottom: 18px;
+  }
+
+  .snippets-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* <-- центрирует контент по горизонтали */
+    text-align: center; /* <-- выравнивание текста */
+    gap: 50px;
+    /* расстояние между колонками */
+    padding-bottom: 180px;
+  }
+  .snippets-block > img {
+    max-width: 500px;
+    /* Убираем ограничение ширины */
+    width: auto;
+    height: auto;
+    object-fit: cover;
+    margin-left: 0px;
+  }
+
+  .snippets-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* <-- центрирует контент по горизонтали */
+    text-align: center; /* <-- выравнивание текста */
+    gap: 40px;
+  }
+
+  .clipboard > img {
+    max-width: 500px;
+    /* Убираем ограничение ширины */
+    width: auto;
+    height: auto;
+    object-fit: cover;
+    margin-bottom: 120px;
+  }
+
+  .workflow-tools {
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+  }
+
+  .workflow-partner {
+    flex-direction: column;
+    align-items: center;
+    gap: 60px;
+    margin-bottom: 120px;
+  }
+
+  footer {
+    padding: 80px 0px 20px 0px;
+  }
+
+  .footer-items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+  }
+
+  .footer-items img {
+    height: 80px;
+    /* или 50px, как тебе нужно */
+    width: auto;
+    /* подстроится автоматически */
+  }
+
+  .footer-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 20px;
+    text-align: left;
+  }
+
+  .footer-menu a {
+    font-size: 1.3em;
+    padding-bottom: 30px;
+  }
+
+  .footer-social {
+    justify-content: center; /* Центрируем иконки по горизонтали */
+    margin-left: 0; /* убираем маргин слева */
+    margin-right: 0; /* убираем маргин справа */
+    gap: 50px;
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 320px){
+
+  .ios-btn,
+  .mac-btn {
+   
+    box-sizing: border-box; /* Обязательно для правильного учета отступов */
+   
+  
+  }
+
+  .hero,
+  .snippets,
+  .snippets-block,
+  .snippets-list,
+  .clipboard,
+  .workflow,
+  .workflow-clipboard {
+    max-width: 100%;
+    padding: 0 10px;
+  }
+
+  .clipboard > img {
+    max-width: 250px;
+    /* Убираем ограничение ширины */
+    width: auto;
+    height: auto;
+    object-fit: cover;
+    margin-bottom: 120px;
+  }
+
+  .snippets-block > img {
+    max-width: 250px;
+    /* Убираем ограничение ширины */
+    width: auto;
+    height: auto;
+    object-fit: cover;
+    margin-left: 0px;
+  }
+  
+}
+
+@media (min-width: 769px) and (max-width: 1200px) {
+ 
+  .hero,
+  .snippets,
+  .snippets-block,
+  .snippets-list,
+  .clipboard,
+  .workflow,
+  .workflow-clipboard {
+    max-width: 100%;
+   
+  }
+
+ 
+  
+}
